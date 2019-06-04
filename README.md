@@ -42,3 +42,14 @@ opm build
 opm upload
 
 ```
+
+测试:
+
+```shell
+opm install v1xingyue/molly
+
+cat hello.lua 
+local molly = require 'molly'
+ngx.say(molly.add(1000, 24))
+
+```
